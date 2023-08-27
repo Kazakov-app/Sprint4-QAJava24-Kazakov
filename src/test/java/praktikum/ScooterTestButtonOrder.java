@@ -3,27 +3,10 @@ package praktikum;
 import org.junit.Rule;
 import org.junit.Test;
 
-public class ScooterTest {
+public class ScooterTestButtonOrder {
 
     @Rule
     public BaseDriverRule driverRule = new BaseDriverRule();
-
-
-    @Test
-    public void questionsAboutImportant() {
-        HomePage homePage = new HomePage(driverRule.getDriver());
-        homePage.openHomePage()
-                .scrollFirstQuestions()// Прокрутка до первого вопроса
-                // Вопрос - Ответ
-                .firstImportantQuestion()
-                .secondImportantQuestion()
-                .thirdImportantQuestion()
-                .fourthImportantQuestion()
-                .fifthImportantQuestion()
-                .sixthImportantQuestion()
-                .seventhImportantQuestion()
-                .eighthImportantQuestion();
-    }
 
 
     @Test
